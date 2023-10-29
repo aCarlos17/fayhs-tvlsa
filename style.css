@@ -1,0 +1,400 @@
+body {
+    background-color: #ffffff;
+    background-image: url(images/school-building.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', 'Open Sans', Roboto, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: .5px;
+    font-weight: 400;
+	text-align: justify;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Open Sans font family */
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-Light.ttf) format(truetype);
+    font-weight: 300;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-Regular.ttf) format(truetype);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-Medium.ttf) format(truetype);
+    font-weight: 500;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-SemiBold.ttf) format(truetype);
+    font-weight: 600;
+    font-style: oblique;
+}
+
+/* horizontal nav bar */
+#navbar {
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #141414;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+li {
+    float: right;
+}
+
+/* fayhs and its logo */
+.logo {
+    float: left;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color:#ffffff;
+}
+
+.title a {
+    letter-spacing: 0;
+    font-weight: 600;
+    float: left;
+    color: #ffffff;
+    padding-top: 14px; 
+    text-decoration: none;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li a:hover {
+    background-color: #000;
+}
+
+/* Header */
+#header {
+    display: block;
+    font-size: 35px;
+    padding: 200px 100px 200px 100px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    color: #ffffff;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 1.0);
+}
+
+#school {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+/* content */
+#main {
+    display: block;
+    background-color: #ffffff;
+    padding: 80px 150px 80px 150px;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 50px;
+    margin: 0 0 80px;
+    font-weight: 600;
+}
+
+.start-now_ready {
+    font-size: 50px;
+    margin: 0 0 80px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+#welcome2 {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.content {
+    color: #3b3b3b;
+    font-size: 20px;
+    line-height: 1.75rem;
+    width: 80%;
+    margin: auto;
+}
+
+#offered-strands {
+    display: block;
+    background-color: /* #4de17a */ #f1f1f1;
+    padding: 80px 150px 80px 150px;
+    text-align: center;
+}
+
+.strands_welcome {
+    font-size: 40px;
+    margin: 0 0 80px;
+}
+
+.strands_content {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 0 80px;
+    line-height: 1.75rem;
+}
+
+.one { display: flex; } .one div { flex: 1; }
+.two { display: flex; } .two div { flex: 1; }
+.three { display: flex; } .three div { flex: 1; }
+.four { display: flex; } .four div { flex: 1; }
+
+.cookery-img { padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; } 
+.tourism-img { padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; } 
+.animation-img { padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; } 
+.programming-img { padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; } 
+
+.cookery-desc { padding: 20px; } 
+.tourism-desc { padding: 20px; } 
+.animation-desc { padding: 20px; } 
+.programming-desc { padding: 20px; }
+
+#description {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#description div {
+    margin-top: 20px; margin-bottom: 20px;
+}
+
+#strand-title {
+    text-align: left;
+    font-size: 35px;
+    display: block;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#tvl-branch {
+    text-align: left;
+    font-size: 40px;
+    display: block;
+    font-weight: 600;
+}
+
+/* #cookery-title {
+    text-align: left;
+    font-size: 40px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#tourism-title {
+    text-align: left;
+    font-size: 40px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#animation-title {
+    text-align: left;
+    font-size: 40px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#programming-title {
+    text-align: left;
+    font-size: 40px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px;
+} */
+
+#before-start {
+    background-color: /* #22b14c */ #e7e7e7;
+    display: block;
+    padding: 80px 150px 80px 150px;
+    text-align: center;
+}
+
+.before-start_welcome {
+    font-size: 40px;
+    margin: 0 0 80px;
+}
+
+.before-start_content {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 0 80px;
+    line-height: 1.75rem;
+}
+
+.reminders {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.reminders div {
+    width: 250px;
+    height: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reminders-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#reminders-txt {
+    box-shadow: none;
+    margin: 0;
+}
+
+
+
+/*.contact {
+    font-size: 12px;
+}*/
+
+/* Start */
+
+#start-now {
+    background-color: #167031b9;
+    display: block;
+    padding: 150px;
+    text-align: center;
+}
+
+.top-button, .bottom-button, .tos-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: .5px;
+
+    display: block;
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+    padding: 16px;
+    padding-left: 1.5rem; padding-right: 1.5rem;
+    border: none;
+    background-color: #1c973e;
+}
+
+.tos-button {
+    padding: 12px;
+    font-size: 12px;
+    padding-left: 1.5rem; padding-right: 1.5rem;
+    box-shadow: none;
+}
+
+#start-top:hover, #start-bottom:hover, #start-tos:hover {
+    background-color: #1a7f37;
+}
+
+/* Footer */
+#footer {
+    background-color: #151515;
+    display: block;
+    padding: 80px 100px 50px 100px;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-icon {
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+/* Terms of Service */
+#tos {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.tos-prompt {
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+    margin: 10vh auto;
+    padding: 65px; padding-top: 35px;
+    width: 70%;
+    height: 70%;
+}
+
+.tos-content {
+    font-size: 13px;
+    text-align: justify;
+    box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+    background-color: #f7f7f7;
+    width: 70%;
+    height: 40%;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 2rem;
+    overflow-y: scroll;
+}
+
+.tos-after_read {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tos-after_read-radio {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+}

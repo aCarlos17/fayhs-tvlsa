@@ -1,0 +1,172 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', 'Open Sans', Roboto, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: .5px;
+    font-weight: 400;
+	text-align: justify;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Open Sans font family */
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-Light.ttf) format(truetype);
+    font-weight: 300;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-Regular.ttf) format(truetype);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-Medium.ttf) format(truetype);
+    font-weight: 500;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-SemiBold.ttf) format(truetype);
+    font-weight: 600;
+    font-style: oblique;
+}
+
+/* horizontal nav bar */
+#navbar {
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #141414;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+li
+{
+    float: right;
+}
+
+/* fayhs and its logo */
+.logo {
+    float: left;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color:#ffffff;
+}
+
+.title a {
+    letter-spacing: 0;
+    font-weight: 600;
+    float: left;
+    color: #ffffff;
+    padding-top: 14px; 
+    text-decoration: none;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li a:hover {
+    background-color: #000;
+}
+
+/* Header */
+#header
+{
+    background-image: url('image/school-building.jpg');
+    font-size: 35px;
+    padding: 130px;
+    margin-left: -30px;
+    margin-right: -8px;
+
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.2);
+}
+
+#school
+{
+    font-size: 18px;
+}
+
+/* content */
+.content
+{
+	text-align: center;
+
+    padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 100px;	
+}
+
+#pgraph
+{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.contact
+{
+    font-size: 12px;
+    /*background-color: #306438;*/
+}
+
+.GREET {
+
+    font-size: 17px;
+    text-align: center;
+
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.greet {
+
+    font-size: 80%;
+
+    margin-top: 10px;
+    margin-right: 70px;
+    margin-left: 70px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.content {
+
+    background-color: #ffffff;
+    margin-top: 0;
+    margin-bottom: -50px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+    height: 800px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+    
+    text-align: justify;
+}
