@@ -387,8 +387,17 @@ li a:hover {
     align-items: center;
 }
 
+.tos-after_read div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-two {
+    margin-bottom: 1rem;
+}
+
 .tos-after_read-radio {
     width: 80%;
-    margin: auto;
     margin-bottom: 1rem;
 }

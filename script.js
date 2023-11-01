@@ -16,5 +16,5 @@ var agree = document.getElementById('tos-agree')
 var disagree = document.getElementById('tos-disagree')
 
 document.getElementById('start-tos').onclick = function() {
-    alert('you are a nigger.')
+    alert('to pages/start ' +  'you go.')
 }
