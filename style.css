@@ -382,22 +382,28 @@ li a:hover {
 .tos-after_read {
     font-size: 12px;
     display: flex;
+    height: 30%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.tos-after_read div {
-    display: flex;
+.radio-buttons {
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.radio-buttons-one,
+.radio-buttons-two {
     align-items: center;
-    justify-content: center;
 }
 
-.form-two {
-    margin-bottom: 1rem;
+.radio-buttons-one input[type="radio"],
+.radio-buttons-two input[type="radio"] {
+    vertical-align: text-bottom;
 }
 
-.tos-after_read-radio {
+
+/* .tos-after_read {
     width: 80%;
-    margin-bottom: 1rem;
-}
+} */
