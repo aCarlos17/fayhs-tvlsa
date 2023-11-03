@@ -187,7 +187,7 @@ li a:hover {
 }
 
 #description div {
-    margin-top: 20px; margin-bottom: 20px;
+    margin-top: 20px; margin-bottom: 3rem;
 }
 
 #strand-title {
@@ -205,38 +205,6 @@ li a:hover {
     display: block;
     font-weight: 600;
 }
-
-/* #cookery-title {
-    text-align: left;
-    font-size: 40px;
-    display: block;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-#tourism-title {
-    text-align: left;
-    font-size: 40px;
-    display: block;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-#animation-title {
-    text-align: left;
-    font-size: 40px;
-    display: block;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-#programming-title {
-    text-align: left;
-    font-size: 40px;
-    display: block;
-    font-weight: 600;
-    margin-bottom: 20px;
-} */
 
 #before-start {
     background-color: /* #22b14c */ #e7e7e7;
@@ -361,9 +329,22 @@ li a:hover {
     background-color: #fff;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
     margin: 10vh auto;
-    padding: 65px; padding-top: 35px;
+    padding: 20px 30px;
     width: 70%;
     height: 70%;
+}
+
+#close {
+    color: #ababab;
+    font-size: 2rem;
+    float: right;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .tos-content {
@@ -375,7 +356,7 @@ li a:hover {
     height: 40%;
     padding: 50px;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     overflow-y: scroll;
 }
 

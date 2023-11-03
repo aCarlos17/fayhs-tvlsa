@@ -12,6 +12,10 @@ document.getElementById('start-bottom').onclick = function() {
     document.getElementsByName('tos-agree-choice')[1].checked = false
 }
 
+document.getElementById('close').onclick = function() {
+    document.getElementById('tos').style.display = "none"
+}
+
 var agree = document.getElementById('tos-agree')
 var disagree = document.getElementById('tos-disagree')
 
