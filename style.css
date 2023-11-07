@@ -42,6 +42,10 @@ body {
     font-style: oblique;
 }
 
+.top-button, .bottom-button, .tos-button, li a {
+    transition: background-color 0.3s;
+}
+
 /* horizontal nav bar */
 #navbar {
     overflow: hidden;
@@ -207,7 +211,7 @@ li a:hover {
 }
 
 #before-start {
-    background-color: /* #22b14c */ #e7e7e7;
+    background-color: #e7e7e7;
     display: block;
     padding: 80px 150px 80px 150px;
     text-align: center;
@@ -330,14 +334,15 @@ li a:hover {
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
     margin: 10vh auto;
     padding: 20px 30px;
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 80%;
 }
 
 #close {
     color: #ababab;
     font-size: 2rem;
     float: right;
+    transition: color 0.3s;
 }
 
 #close:hover,
@@ -348,12 +353,12 @@ li a:hover {
 }
 
 .tos-content {
-    font-size: 13px;
+    font-size: 11px;
     text-align: justify;
     box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
     background-color: #f7f7f7;
-    width: 70%;
-    height: 40%;
+    width: 60%;
+    height: 30%;
     padding: 50px;
     margin: auto;
     margin-bottom: 0;
