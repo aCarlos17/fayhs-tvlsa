@@ -1,24 +1,35 @@
-document.getElementById('start-top').onclick = function() {
-    document.getElementById('tos').style.display = "block"
+let start = [document.getElementById('start-top'), document.getElementById('start-bottom'), document.getElementById('start-tos')]
+let tosPrompt = document.getElementById('tos')
+let tosAgree = document.getElementsByName('tos-agree-choice')
 
-    document.getElementsByName('tos-agree-choice')[0].checked = false
-    document.getElementsByName('tos-agree-choice')[1].checked = false
+start[0].onclick = function() {
+    tosPrompt.style.display = "block"
+
+    tosAgree[0].checked = false
+    tosAgree[1].checked = false
 }
 
-document.getElementById('start-bottom').onclick = function() {
-    document.getElementById('tos').style.display = "block"
+start[1].onclick = function() {
+    tosPrompt.style.display = "block"
 
-    document.getElementsByName('tos-agree-choice')[0].checked = false
-    document.getElementsByName('tos-agree-choice')[1].checked = false
+    tosAgree[0].checked = false
+    tosAgree[1].checked = false
 }
 
 document.getElementById('close').onclick = function() {
-    document.getElementById('tos').style.display = "none"
+    tosPrompt.style.display = "none"
 }
 
-var agree = document.getElementById('tos-agree')
-var disagree = document.getElementById('tos-disagree')
+let agree = document.getElementById('tos-agree')
+let disagree = document.getElementById('tos-disagree')
+let n = 0
 
-document.getElementById('start-tos').onclick = function() {
-    alert('to pages/start ' +  'you go.')
+if (agree.checked === true) {
+    n = 1
+}
+
+if (n == 1) {
+    start[2].onclick = function() {
+        alert('hello world')
+    }
 }
