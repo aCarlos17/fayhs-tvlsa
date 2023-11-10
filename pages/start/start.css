@@ -1,6 +1,6 @@
 body {
     background-color: #ffffff;
-    font-family: 'Segoe UI', 'Open Sans', Roboto, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: .5px;
     font-weight: 400;
 	text-align: justify;
@@ -105,68 +105,38 @@ li a:hover {
     font-size: 18px;
 }
 
-/* content */
-.content
-{
-	text-align: center;
-
-    padding-top: 50px;
-	padding-left: 100px;
-	padding-right: 100px;	
-}
-
-#pgraph
-{
-    text-align: justify;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 27px;
-}
-
-.contact
-{
-    font-size: 12px;
-    /*background-color: #306438;*/
-}
-
-.GREET {
-
-    font-size: 17px;
+#q1 {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    gap: 2rem;
 }
 
-.greet {
-
-    font-size: 80%;
-
-    margin-top: 10px;
-    margin-right: 70px;
-    margin-left: 70px;
-
-    padding-left: 40px;
-    padding-right: 40px;
-    
+.container {
+    margin: 1.5rem;
+    display: inline-block;
+    position: relative;
+    user-select: none;
 }
 
-.content {
+.container input {
+    opacity: 0;
+    width: 2rem;
+}
 
-    background-color: #ffffff;
-    margin-top: 0;
-    margin-bottom: -50px;
-    margin-left: 60px;
-    margin-right: 60px;
+.checkmark {
+    box-shadow: inset 1px 1px 10px 1px #00000051;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    border-radius: 50%;
+}
 
-    height: 800px;
-
-    padding-left: 20px;
-    padding-right: 20px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-
-    
-    text-align: justify;
+.container input:checked ~ .checkmark {
+    background-color: green;
 }
