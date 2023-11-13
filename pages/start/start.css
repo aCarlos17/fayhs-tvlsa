@@ -140,3 +140,17 @@ li a:hover {
 .container input:checked ~ .checkmark {
     background-color: green;
 }
+
+#q1 button {
+    border: none;
+    background-color: green;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 50px;
+}
+
+#q1 button:hover {
+    background-color: rgb(2, 96, 2);
+}

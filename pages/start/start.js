@@ -28,4 +28,6 @@ let tourism = [
     "idk, tourism stuff ig"
 ]
 
-console.log(p);
+document.getElementById('button').onclick = function() {
+    alert("button was clicked");
+ }​;​
