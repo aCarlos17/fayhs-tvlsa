@@ -3,6 +3,8 @@ let cScore = 0
 let aScore = 0
 let tScore = 0
 
+let isChecked = document.getElementsByName('radio')
+
 let programming = [
     "I am confident in my mathematical skills.",
     "I am intrigued by things such as technology or how games are made.",
@@ -32,6 +34,17 @@ let tourism = [
     "I am good in persuading others."
 ]
 
+isChecked[0].checked = false;
+isChecked[1].checked = false;
+isChecked[2].checked = false;
+isChecked[3].checked = false;
+isChecked[4].checked = false;
+
 document.getElementById('button').addEventListener('click', function() {
     alert("Hello");
+    isChecked[0].checked = false;
+    isChecked[1].checked = false;
+    isChecked[2].checked = false;
+    isChecked[3].checked = false;
+    isChecked[4].checked = false;
 });
