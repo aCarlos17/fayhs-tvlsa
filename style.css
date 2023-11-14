@@ -289,6 +289,7 @@ li a:hover {
     font-size: 12px;
     padding-left: 1.5rem; padding-right: 1.5rem;
     box-shadow: none;
+    margin: 0 auto;
 }
 
 .top-button:hover, .bottom-button:hover, .tos-button:hover {
