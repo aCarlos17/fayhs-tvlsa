@@ -38,13 +38,25 @@ body {
     font-style: oblique;
 }
 
+#content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #q1 {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 2rem;
+}
+
+#q1 h1 {
+    margin: 0;
 }
 
 .container {
