@@ -32,6 +32,6 @@ let tourism = [
     "I am good in persuading others."
 ]
 
-document.getElementById('button').onclick = function() {
-    alert("button was clicked");
- }​;​
+document.getElementById('button').addEventListener('click', function() {
+    alert("Hello");
+});
