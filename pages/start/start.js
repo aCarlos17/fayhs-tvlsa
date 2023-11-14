@@ -1,7 +1,7 @@
-let p = 0
-let c = 0
-let a = 0
-let t = 0
+let pScore = 0
+let cScore = 0
+let aScore = 0
+let tScore = 0
 
 let programming = [
     "I am confident in my mathematical skills.",
@@ -16,16 +16,20 @@ let programming = [
 ]
 
 let cookery = [
-    "I want to improve my experience in preparing food",
-    " "
+    "I want to improve my experience in preparing food.",
+    "I want to learn the fundamentals of cooking, including hygiene standards.",
+    "I am conscious of my cleanliness."
 ]
 
 let animation = [
-    "I am interested on how drawings come to life."
+    "I am interested in how drawings come to life.",
+    "I want to improve my drawing skills.",
+    "I want to learn how to create motion graphics for websites, video games, or visual effects."
 ]
 
 let tourism = [
-    "idk, tourism stuff ig"
+    "I respect the cultural differences and beliefs of others.",
+    "I am good in persuading others."
 ]
 
 document.getElementById('button').onclick = function() {
