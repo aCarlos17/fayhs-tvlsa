@@ -20,16 +20,16 @@ document.getElementById('close').onclick = function() {
     tosPrompt.style.display = "none"
 }
 
-let agree = document.getElementById('tos-agree')
-let disagree = document.getElementById('tos-disagree')
-let n = 0
+let n
 
-if (agree.checked === true) {
-    n = 1
-}
+tosAgree[0].onclick = function() { n = 1 }
+tosAgree[1].onclick = function() { n = 0 }
 
-if (n == 1) {
-    start[2].onclick = function() {
-        alert('hello world')
+start[2].addEventListener('click', function(){
+    if (n == 1) {
+        window.location.replace('pages/start/start.html')
     }
-}
+    else if (n == 0) {
+        tosPrompt.style.display = "none"
+    }
+})
