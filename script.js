@@ -27,7 +27,7 @@ tosAgree[1].onclick = function() { n = 0 }
 
 start[2].addEventListener('click', function(){
     if (n == 1) {
-        window.location.replace('pages/start/start.html')
+        window.location.href = "pages/start/start.html"
     }
     else if (n == 0) {
         tosPrompt.style.display = "none"
