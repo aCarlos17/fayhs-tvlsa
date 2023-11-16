@@ -69,7 +69,7 @@ li a:hover {
 #header {
     display: block;
     font-size: 35px;
-    padding: 200px 100px 200px 100px;
+    padding: 200px 100px;
     text-decoration: none;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
@@ -90,7 +90,7 @@ li a:hover {
 #main {
     display: block;
     background-color: #ffffff;
-    padding: 80px 150px 80px 150px;
+    padding: 80px 150px;
     text-align: center;
 }
 
@@ -98,4 +98,53 @@ li a:hover {
     font-size: 50px;
     margin: 0 0 80px;
     font-weight: 600;
+}
+
+.content {
+    color: #3b3b3b;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    width: 80%;
+    margin: auto;
+}
+
+/* Contributors / Members of the Research Team */
+#contributors {
+    display: block;
+    background-color: #e6e6e6;
+    padding: 80px 150px;
+    text-align: center;
+}
+
+.contributors-welcome {
+    font-size: 50px;
+    margin: 0 0 80px;
+    font-weight: 600;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    text-align: justify;
+}
+
+.members h3 {
+    font-weight: 400;
+}
+
+.aderes, .blanco {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    margin: 0 auto 1.5rem;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+
+    font-size: 1.2rem;
+    line-height: 1.75rem;
 }
