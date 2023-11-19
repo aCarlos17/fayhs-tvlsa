@@ -6,21 +6,21 @@ let tScore = 0
 let isChecked = document.getElementsByName('radio')
 
 let programming = [
-    "I am confident in my mathematical skills.",
-    "I am intrigued by things such as technology or how games are made.",
+    "I am skilled in conveying complex ideas and information clearly to others.",
+    "I am adept at analyzing problems and identifying root causes.",
+    "I consistently come up with creative and effective solutions to given challenges.",
+    "I actively seek out opportunities to improve work processes and procedures.",
+    "I can handle unexpected challenges and solve problems efficiently.",
     "I am confident in my problem-solving abilities and my logical thinking.",
-    "I can easily understand and apply complex principles and concepts of anything at hand.",
-    "I can explain my ideas and my thought process in a way that anyone can understand.",
-    "The thought of creating products that would ease productivity interests me.",
-    "I am open to learn new things outside of my current scope.",
-    "I can easily implement and apply a broad concept, or a mechanic from an idea.",
+    "I am confident in my ability to apply mathematical principles to solve problems.",
+    "I actively seek to stay updated on new, emerging technologies today and tommorow.",
+    "I am proficient in using the latest technologies.",
     "I am patient and detail-oriented when it comes to my tasks or projects.",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
+    "I am proficient in identifying and addressing quality issues in my tasks.",
+    "I take pride in delivering work that consistently meets high-quality standards.",
+    "I am intrigued by things such as technology or how games are made.",
+    "The thought of creating products that would ease productivity interests me.",
+    "I keep my composure when faced with unfamiliar buttons or options on my device."
 ]
 
 let cookery = [
@@ -92,10 +92,10 @@ document.getElementById('button').addEventListener('click', function() {
     isChecked[4].checked = false;
 
     isChecked[0].addEventListener('click', function(){
-        // switch-case detect if question is a programming question to increment to 0 on variables on lines 1-4
-        // do so on [1-4]
-        // maybe use a for loop
+        
     })
+    // detect if question is a programming question or what to increment to 0 or what's checked on variables on lines 1-4
+    // replace Next to Result if all questions are checked
+    // redirect to the respected result
+    // idk, do whatever
 });
-
-// more questions needed, but all of the questions sent on messenger are ass.
