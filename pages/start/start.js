@@ -77,25 +77,53 @@ let tourism = [
     ""
 ]
 
-isChecked[0].checked = false;
-isChecked[1].checked = false;
-isChecked[2].checked = false;
-isChecked[3].checked = false;
-isChecked[4].checked = false;
+class Checkmarks {
+
+    check_select() {
+
+        let x;
+
+        for ( x = 0; x < 5; x++)
+        {
+            if (isChecked[x].checked == true)
+            {
+                break;
+            }
+        }
+
+        switch (x) {
+            
+            case 0: alert(x); break; // SA
+            case 1: alert(x); break; // A
+            case 2: alert(x); break; // N
+            case 3: alert(x); break; // D
+            case 4: alert(x); break; // SD
+        }
+    }
+
+    clean_select() {
+        isChecked[0].checked = false;
+        isChecked[1].checked = false;
+        isChecked[2].checked = false;
+        isChecked[3].checked = false;
+        isChecked[4].checked = false;
+    }
+    
+}  const Myclass = new Checkmarks; 
+
+Myclass.clean_select();
+
+
+/* 
+ detect if question is a programming question or what to increment to 0 or what's checked on variables on lines 1-4
+ replace Next to Result if all questions are checked
+ redirect to the respected result
+ idk, do whatever
+*/
 
 document.getElementById('button').addEventListener('click', function() {
-    alert("Hello");
-    isChecked[0].checked = false;
-    isChecked[1].checked = false;
-    isChecked[2].checked = false;
-    isChecked[3].checked = false;
-    isChecked[4].checked = false;
 
-    isChecked[0].addEventListener('click', function(){
-        
-    })
-    // detect if question is a programming question or what to increment to 0 or what's checked on variables on lines 1-4
-    // replace Next to Result if all questions are checked
-    // redirect to the respected result
-    // idk, do whatever
+    Myclass.check_select();
+    Myclass.clean_select();
+    
 });
