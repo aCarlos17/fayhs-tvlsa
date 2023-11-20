@@ -102,11 +102,10 @@ class Checkmarks {
     }
 
     clean_select() {
-        isChecked[0].checked = false;
-        isChecked[1].checked = false;
-        isChecked[2].checked = false;
-        isChecked[3].checked = false;
-        isChecked[4].checked = false;
+        for (let x = 0; x < 5; x++)
+        {
+            isChecked[x].checked = false;
+        }
     }
     
 }  const Myclass = new Checkmarks; 
