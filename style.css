@@ -159,6 +159,7 @@ li a:hover {
 #description {
     font-size: 20px;
     text-align: left;
+    line-height: 1.75rem;
 }
 
 #description div {
@@ -172,6 +173,7 @@ li a:hover {
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 20px;
+    line-height: 2.3rem;
 }
 
 #tvl-branch {
@@ -179,6 +181,7 @@ li a:hover {
     font-size: 40px;
     display: block;
     font-weight: 600;
+    line-height: 2.5rem;
 }
 
 #before-start {
