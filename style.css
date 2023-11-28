@@ -333,15 +333,15 @@ li a:hover {
     background-color: #f7f7f7;
     width: 60%;
     height: 30%;
-    padding: 1.75rem;
+    padding: 2rem;
     margin: auto;
     margin-bottom: 0;
     overflow-y: scroll;
 }
 
-.tos-content ol {
-    padding-left: 1rem;
-}
+.tos-content ol { padding-left: 1rem; }
+.tos-content li { margin-bottom: 1rem; }
+.tos-content h4 { margin-top: 0; }
 
 .tos-after_read {
     font-size: 12px;
