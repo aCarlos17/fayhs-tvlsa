@@ -63,6 +63,7 @@ body {
 
 .container {
     margin: 1.5rem;
+    margin-right: 1.8rem;
     display: inline-block;
     position: relative;
     user-select: none;
