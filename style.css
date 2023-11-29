@@ -344,7 +344,7 @@ li a:hover {
 }
 
 .tos-content ol { padding-left: 1rem; }
-.tos-content li { margin-bottom: 1rem; }
+.tos-content li { margin-bottom: 1rem; margin-left: 0; }
 .tos-content h4 { margin-top: 0; }
 
 .tos-after_read {
