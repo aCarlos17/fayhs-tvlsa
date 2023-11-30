@@ -399,11 +399,57 @@ li a:hover {
         font-size: 1rem;
         margin: 0;
     }
+    .tos-button { margin: auto; }
 
-    #main, #offered-strands, #before-start, #start-now, #footer {
+    .one, .two, .three, .four {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .two, .four {
+        flex-direction: column-reverse;
+    }
+
+    .reminders {
+        flex-direction: column;
+    }
+    
+    .reminders div {
+        width: 70%;
+        height: 22rem;
+        flex-direction: column;
+    }
+    
+    .reminders-img {
+        width: 8rem;
+        margin: 0;
+    }
+    
+    #reminders-txt {
+        width: 12rem;
+        padding-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main, #offered-strands, #before-start, #start-now {
         text-align: left;
         padding: 3rem 10vw;
         align-items: baseline;
+    } 
+
+    .footer { 
+        flex-direction: column;
+        align-items: center; justify-content: center;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+    }
+
+    .footer h2 {
+        text-align: center;
     }
 }
 
@@ -411,6 +457,16 @@ li a:hover {
 @media only screen and (min-width: 768px) {
     body {
         font-size: 1.1rem;
+    }
+
+    .top-button, .bottom-button, .tos-button {
+        font-size: 1rem;
+        margin: auto;
+    }
+
+    #header, #main, #offered-strands, #before-start, #start-now {
+        align-items: center;
+        text-align: center;
     }
 
     #navigation-bar ul {
