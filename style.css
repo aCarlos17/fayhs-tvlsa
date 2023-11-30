@@ -312,6 +312,9 @@ li a:hover {
     height: 100%;
     overflow: visible;
     background-color: rgba(0,0,0,0.4); 
+
+    align-items: center;
+    justify-self: center;
 }
 
 .tos-prompt {
@@ -377,6 +380,7 @@ li a:hover {
     body {
         font-size: 1.1rem;
     }
+
     .reminders {
         flex-direction: column;
     }
@@ -404,7 +408,6 @@ li a:hover {
     }
 
     #tos {
-        display: flex;
         align-items: center;
         justify-self: center;
     }
@@ -431,5 +434,64 @@ li a:hover {
 
     .radio-buttons input[type=radio] {
         width: 1.2rem; height: 1.2rem;
+    }
+}
+
+/* PC Displays */
+@media only screen and (min-width: 1000px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .reminders {
+        flex-direction: row;
+    }
+    
+    .reminders div {
+        width: 15rem;
+        height: 25.5rem;
+        flex-direction: column;
+    }
+
+    .tos-button {
+        padding: 1.1rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    #tos {
+        align-items: center;
+        justify-self: center;
+    }
+    
+    .tos-prompt {
+        width: 60%;
+        height: 80%;
+    }
+    
+    .tos-content {
+        font-size: 11px;
+        width: 60%;
+        height: 30%;
+    }
+    
+    .radio-buttons p {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .radio-buttons {
+        margin-bottom: 0;
+    }
+    
+    .radio-buttons p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .radio-buttons input[type=radio] {
+        width: 1rem; height: 1rem;
     }
 }
