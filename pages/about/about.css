@@ -97,28 +97,6 @@ li a:hover {
     margin-bottom: 3rem;
 }
 
-/* content */
-#main {
-    display: block;
-    background-color: #ffffff;
-    padding: 80px 150px;
-    text-align: center;
-}
-
-.welcome {
-    font-size: 50px;
-    margin: 0 0 80px;
-    font-weight: 600;
-}
-
-.content {
-    color: #3b3b3b;
-    font-size: 1.2rem;
-    line-height: 1.75rem;
-    width: 80%;
-    margin: auto;
-}
-
 /* Contributors / Members of the Research Team */
 #contributors {
     display: block;
@@ -146,7 +124,7 @@ li a:hover {
     font-weight: 400;
 }
 
-.aderes, .blanco {
+.members div {
     display: flex;
     align-items: center;
     gap: 3rem;
