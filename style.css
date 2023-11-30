@@ -135,7 +135,7 @@ li a:hover {
 
 .content {
     color: #3b3b3b;
-    font-size: 20px;
+    font-size: 1.15rem;
     line-height: 1.75rem;
     width: 80%;
     margin: auto;
@@ -150,7 +150,6 @@ li a:hover {
 
 .strands_content {
     font-size: 20px;
-    line-height: 25px;
     margin: 0 0 80px;
     line-height: 1.75rem;
 }
@@ -375,10 +374,47 @@ li a:hover {
 
 /* -------------------- For smaller devices -------------------- */
 
+/* Phone Displays */
+@media only screen and (min-width: 350px) {
+    body {
+        background-size: cover;
+        background-color: #1c973e;
+    }
+
+    #navigation-bar ul {
+        display: none;
+    }
+
+    #header {
+        align-items: baseline;
+        text-align: left;
+        padding: 2rem;
+    }
+
+    #header h1 {
+        font-size: 4rem;
+    }
+
+    .top-button, .bottom-button, .tos-button {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    #main, #offered-strands, #before-start, #start-now, #footer {
+        text-align: left;
+        padding: 3rem 10vw;
+        align-items: baseline;
+    }
+}
+
 /* Tablet Displays */
 @media only screen and (min-width: 768px) {
     body {
         font-size: 1.1rem;
+    }
+
+    #navigation-bar ul {
+        display: flex;
     }
 
     .reminders {
