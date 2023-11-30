@@ -212,11 +212,12 @@ li a:hover {
     gap: 3rem;
     align-items: center;
     text-align: center;
+    flex-direction: row;
 }
 
 .reminders div {
     width: 15rem;
-    height: auto;
+    height: 25.5rem;
     padding: 30px;
     background-color: #ffffff;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
@@ -255,7 +256,7 @@ li a:hover {
     margin: auto;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 
-    padding: 1.2rem;
+    padding: 1.1rem;
     padding-left: 1.5rem; padding-right: 1.5rem;
     border: none;
     background-color: #1c973e;
@@ -300,7 +301,7 @@ li a:hover {
     height: 1rem;
 }
 
-/* Terms of Service */
+/* Terms of Service and Privacy Policy Modal Window */
 #tos {
     display: none;
     position: fixed;
@@ -346,7 +347,7 @@ li a:hover {
     padding: 3rem;
     margin: auto;
     margin-bottom: 0;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 .tos-content ol { padding-left: 1rem; }
@@ -362,18 +363,73 @@ li a:hover {
     align-items: center;
 }
 
-.radio-buttons {
+.radio-buttons p {
     margin-bottom: 1rem;
-    flex-direction: column;
-}
-
-.radio-buttons-one,
-.radio-buttons-two {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-.radio-buttons-one input[type="radio"],
-.radio-buttons-two input[type="radio"] {
-    vertical-align: text-bottom;
-}
+/* -------------------- For smaller devices -------------------- */
 
+/* Tablet Displays */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 1.1rem;
+    }
+    .reminders {
+        flex-direction: column;
+    }
+    
+    .reminders div {
+        width: 80%;
+        height: 16rem;
+        flex-direction: row;
+    }
+    
+    .reminders-img {
+        width: 10rem;
+        margin: 0;
+    }
+    
+    #reminders-txt {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tos-button {
+        padding: 1.1rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    #tos {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+    
+    .tos-prompt {
+        width: 80%;
+        height: 80%;
+    }
+    
+    .tos-content {
+        width: 70%;
+        height: 40%;
+    }
+
+    .radio-buttons {
+        margin-bottom: 2rem;
+    }
+    
+    .radio-buttons p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .radio-buttons input[type=radio] {
+        width: 1.2rem; height: 1.2rem;
+    }
+}
