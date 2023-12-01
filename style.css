@@ -1,3 +1,7 @@
+html {
+    font-size: 12px;
+}
+
 body {
     background-color: #ffffff;
     background-image: url(images/school-building.jpeg);
@@ -57,7 +61,7 @@ body {
 
 #navigation-bar ul {
     list-style-type: none;
-    display: flex;
+    display: none;
     align-items: center;
     margin: 0;
 }
@@ -76,32 +80,35 @@ li a:hover {
     background-color: #000;
 }
 
-/* Header */
+/* -------------------- Header -------------------- */
 #header {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     flex-direction: column;
 
-    font-size: 35px;
-    padding: 10vw;
-    text-align: center;
+    padding: 4rem 2rem;
+    text-align: left;
     background-color: rgba(0, 0, 0, 0.4);
 
     color: #ffffff;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 1.0);
+}
 
-
+#header h1 {
+    font-size: 4rem;
 }
 
 #school {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0;
-    color: #fff;
-    margin-bottom: 3rem;
 }
 
-/* content */
+#header h1, #school {
+    margin-bottom: 2.5rem;
+}
+
+/* -------------------- Main Content -------------------- */
 #main, #offered-strands, #before-start, #start-now, #footer {
     text-align: center;
     padding: 5rem 10vw;
@@ -114,7 +121,7 @@ li a:hover {
 #main { background-color: #fff; }
 
 .welcome {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0 0 4rem;
     font-weight: 600;
 }
@@ -129,7 +136,7 @@ li a:hover {
 
 #welcome2 {
     margin: 0;
-    font-size: 1.65rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -247,12 +254,10 @@ li a:hover {
 .top-button, .bottom-button, .tos-button {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.1rem;
-    letter-spacing: .5px;
 
     display: block;
     border-radius: 30px;
-    margin: auto;
+    margin: 0;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 
     padding: 1.1rem;
@@ -376,30 +381,6 @@ li a:hover {
 
 /* Phone Displays */
 @media only screen and (min-width: 350px) {
-    body {
-        background-size: cover;
-        background-color: #1c973e;
-    }
-
-    #navigation-bar ul {
-        display: none;
-    }
-
-    #header {
-        align-items: baseline;
-        text-align: left;
-        padding: 2rem;
-    }
-
-    #header h1 {
-        font-size: 4rem;
-    }
-
-    .top-button, .bottom-button, .tos-button {
-        font-size: 1rem;
-        margin: 0;
-    }
-    .tos-button { margin: auto; }
 
     .one, .two, .three, .four {
         flex-direction: column;
