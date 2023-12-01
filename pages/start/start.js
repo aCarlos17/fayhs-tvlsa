@@ -84,7 +84,7 @@ Myclass.clean_select();
 
 document.getElementById('button').addEventListener('click', function() {
 
-    DeclareVariables.Variables();
+    // DeclareVariables.Variables();
     Myclass.check_select();
     Myclass.clean_select();
     
