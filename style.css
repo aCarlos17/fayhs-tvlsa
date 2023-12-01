@@ -1,5 +1,5 @@
 html {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 body {
@@ -96,80 +96,94 @@ li a:hover {
 }
 
 #header h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
-#school {
+#header p {
     font-size: 1rem;
     margin: 0;
 }
 
-#header h1, #school {
+#header h1, #header p {
     margin-bottom: 2.5rem;
 }
 
 /* -------------------- Main Content -------------------- */
 #main, #offered-strands, #before-start, #start-now, #footer {
-    text-align: center;
-    padding: 5rem 10vw;
+    text-align: left;
+    padding: 3rem 10vw;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
 #main { background-color: #fff; }
 
-.welcome {
+.welcome, .start-now_ready {
     font-size: 2.5rem;
     margin: 0 0 4rem;
     font-weight: 600;
+    line-height: 3rem;
+}
+
+.welcome span {
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 0;
+    font-weight: 500;
 }
 
 .start-now_ready {
-    font-size: 3rem;
-    margin: 0 0 4rem;
-    font-weight: 600;
     color: #fff;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-#welcome2 {
-    margin: 0;
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-
 .content {
     color: #3b3b3b;
-    font-size: 1.15rem;
-    line-height: 1.75rem;
-    width: 80%;
+    line-height: 1.5rem;
+    width: 100%;
     margin: auto;
 }
 
-#offered-strands { background-color: /* #4de17a */ #f1f1f1; }
+/* Strands That We Offer */
+#offered-strands { background-color: #f1f1f1; }
 
 .strands_welcome, .before-start_welcome {
     font-size: 2.5rem;
     margin: 0 0 4rem;
+    line-height: 3rem;
 }
 
 .strands_content {
-    font-size: 20px;
     margin: 0 0 80px;
-    line-height: 1.75rem;
+    line-height: 1.5rem;
 }
 
-.one { display: flex; } .one div { flex: 1; }
-.two { display: flex; } .two div { flex: 1; }
-.three { display: flex; } .three div { flex: 1; }
-.four { display: flex; } .four div { flex: 1; }
+.one, .two, .three, .four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+}
+
+.two, .four {
+    flex-direction: column-reverse;
+}
+
+.one div { flex: 1; }
+.two div { flex: 1; }
+.three div { flex: 1; }
+.four div { flex: 1; }
 
 .cookery-img { padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; } 
 .tourism-img { padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; } 
 .animation-img { padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; } 
-.programming-img { padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; } 
+.programming-img { padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; }
+
+.cookery-img img, .tourism-img img, .animation-img img, .programming-img img {
+    width: 60vw;
+}
 
 .cookery-desc { padding: 20px; } 
 .tourism-desc { padding: 20px; } 
@@ -177,18 +191,17 @@ li a:hover {
 .programming-desc { padding: 20px; }
 
 #description {
-    font-size: 20px;
     text-align: left;
     line-height: 1.75rem;
 }
 
 #description div {
-    margin-top: 20px; margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 #strand-title {
     text-align: left;
-    font-size: 35px;
+    font-size: 1.5rem;
     display: block;
     font-weight: 500;
     margin-top: 0;
@@ -198,33 +211,35 @@ li a:hover {
 
 #tvl-branch {
     text-align: left;
-    font-size: 40px;
+    font-size: 2rem;
     display: block;
     font-weight: 600;
     line-height: 2.5rem;
 }
 
-#before-start { background-color: #e7e7e7; }
-
-.before-start_content {
-    font-size: 20px;
-    line-height: 25px;
-    margin: 0 0 80px;
-    line-height: 1.75rem;
+/* Before You Go */
+#before-start { 
+    background-color: #e7e7e7;
 }
 
-.reminders {
+.before-start_content {
+    line-height: 1.5rem;
+    margin: 0 0 80px;
+}
+
+#reminders {
     display: flex;
     gap: 3rem;
     align-items: center;
     text-align: center;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
 }
 
-.reminders div {
-    width: 15rem;
-    height: 25.5rem;
-    padding: 30px;
+#reminders div {
+    width: 45vw;
+    height: 22rem;
+    padding: 2rem;
     background-color: #ffffff;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -232,9 +247,9 @@ li a:hover {
     flex-direction: column;
 }
 
-.reminders-img {
-    width: 10rem;
-    margin-bottom: 2rem;
+#reminders div img {
+    width: 8rem;
+    margin-bottom: 0;
 }
 
 #reminders-txt {
@@ -242,13 +257,10 @@ li a:hover {
     margin: 0;
 }
 
-/* Start */
+/* Are you ready to ... */
 
 #start-now {
     background-color: #167031b9;
-    display: block;
-    padding: 150px;
-    text-align: center;
 }
 
 .top-button, .bottom-button, .tos-button {
@@ -281,15 +293,28 @@ li a:hover {
 /* Footer */
 #footer {
     background-color: #151515;
-    text-align: justify;
+    text-align: left;
     color: #fff;
-    align-items: baseline;
+    align-items: center;
+    
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-logo {
+    margin: 0 auto 0 auto;
+    width: 200;
+}
+
+#footer h2 {
+    text-align: center;
 }
 
 #footer hr { width: 100%; margin: 2rem 0; }
 
 .footer {
     display: flex;
+    flex-direction: column;
 }
 
 .footer-content p {
@@ -325,8 +350,8 @@ li a:hover {
     background-color: #fff;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
     margin: 10vh auto;
-    padding: 20px 30px;
-    width: 60%;
+    padding: 20px 20px;
+    width: 85%;
     height: 80%;
 }
 
@@ -349,11 +374,10 @@ li a:hover {
     text-align: justify;
     box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
     background-color: #f7f7f7;
-    width: 60%;
-    height: 30%;
-    padding: 3rem;
-    margin: auto;
-    margin-bottom: 0;
+    width: 90%;
+    height: 40%;
+    padding: 1rem;
+    margin: 0;
     overflow: scroll;
 }
 
@@ -377,62 +401,7 @@ li a:hover {
     align-items: center;
 }
 
-/* -------------------- For smaller devices -------------------- */
-
-/* Phone Displays */
-@media only screen and (min-width: 350px) {
-
-    .one, .two, .three, .four {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .two, .four {
-        flex-direction: column-reverse;
-    }
-
-    .reminders {
-        flex-direction: column;
-    }
-    
-    .reminders div {
-        width: 70%;
-        height: 22rem;
-        flex-direction: column;
-    }
-    
-    .reminders-img {
-        width: 8rem;
-        margin: 0;
-    }
-    
-    #reminders-txt {
-        width: 12rem;
-        padding-bottom: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #main, #offered-strands, #before-start, #start-now {
-        text-align: left;
-        padding: 3rem 10vw;
-        align-items: baseline;
-    } 
-
-    .footer { 
-        flex-direction: column;
-        align-items: center; justify-content: center;
-    }
-
-    .footer-logo {
-        margin: 0 auto;
-    }
-
-    .footer h2 {
-        text-align: center;
-    }
-}
+/* -------------------- Responsive Web Design -------------------- */
 
 /* Tablet Displays */
 @media only screen and (min-width: 768px) {
