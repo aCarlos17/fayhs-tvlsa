@@ -391,8 +391,8 @@ li a:hover {
     background-color: #fff;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
     margin: 10vh auto;
-    padding: 20px 20px;
-    width: 85%;
+    /* padding: 20px 20px; */
+    width: 80%;
     height: 80%;
 }
 
@@ -401,6 +401,7 @@ li a:hover {
     font-size: 2rem;
     float: right;
     transition: color 0.3s;
+    width: 2rem;
 }
 
 #close:hover,
@@ -415,11 +416,11 @@ li a:hover {
     text-align: justify;
     box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
     background-color: #f7f7f7;
-    width: 90%;
     height: 40%;
     padding: 1rem;
     margin: 0;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .tos-content ol { padding-left: 1rem; }
@@ -429,7 +430,7 @@ li a:hover {
 .tos-after_read {
     font-size: 12px;
     display: flex;
-    height: 30%;
+    height: 10rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -514,11 +515,6 @@ li a:hover {
         width: 80%;
         height: 80%;
     }
-    
-    .tos-content {
-        width: 70%;
-        height: 40%;
-    }
 
     .radio-buttons {
         margin-bottom: 2rem;
@@ -582,7 +578,6 @@ li a:hover {
     
     .tos-content {
         font-size: 11px;
-        width: 60%;
         height: 30%;
     }
     
