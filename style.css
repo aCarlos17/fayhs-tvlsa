@@ -81,25 +81,45 @@ li a:hover {
 }
 
 /* Dropdown Menu for Phone Displays */
+.dropdown-menu {
+    background-color: #141414;
+    color: white;
+    padding: 1rem;
+    border: none;
+}
+
 .dropdown {
-    padding: 0 1rem;
     position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
-    display: block;
-    position: absolute;
+    display: none;
+    position: fixed;
     background-color: #141414;
-    padding: 1rem;
-    min-width: 5rem;
-    z-index: 1;
+    min-width: 15vw;
+    right: 0;
 }
 
 .dropdown-content a {
+    color: #fff;
+    background-color: #141414;
     padding: 1rem;
-    display: block;
     text-decoration: none;
-    color: #141414;
+    display: block;
+    z-index: 5;
+}
+
+.dropdown-content a:hover {
+    background-color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    background-color: #000;
 }
 
 /* -------------------- Header -------------------- */
@@ -429,6 +449,10 @@ li a:hover {
 @media only screen and (min-width: 768px) {
     body {
         font-size: 1.1rem;
+    }
+
+    .dropdown {
+        display: none;
     }
 
     .top-button, .bottom-button, .tos-button {
