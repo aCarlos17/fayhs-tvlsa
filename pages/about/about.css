@@ -209,4 +209,23 @@ li a:hover {
     #navigation-bar ul {
         display: flex;
     }
+
+    .members div {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        text-align: center;
+    }
+
+    #header {
+        padding: 30vh 20vw;
+    }
+
+    #header, #contributors {
+        text-align: center;
+        align-items: center;
+    }
 }
