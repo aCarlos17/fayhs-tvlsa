@@ -1,5 +1,5 @@
 html {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 body {
@@ -61,7 +61,7 @@ body {
 
 #navigation-bar ul {
     list-style-type: none;
-    display: flex;
+    display: none;
     align-items: center;
     margin: 0;
 }
@@ -84,8 +84,8 @@ li a:hover {
 .dropdown-menu {
     background-color: #141414;
     color: white;
-    padding: 1rem;
     border: none;
+    width: 3rem; height: 3rem;
 }
 
 .dropdown {
@@ -104,7 +104,7 @@ li a:hover {
 .dropdown-content a {
     color: #fff;
     background-color: #141414;
-    padding: 1rem;
+    padding: 1rem 3rem 1rem 1rem;
     text-decoration: none;
     display: block;
 }
@@ -152,12 +152,12 @@ li a:hover {
 /* Contributors / Members of the Research Team */
 #contributors {
     text-align: left;
-    padding: 3rem 10vw;
+    padding: 3rem;
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #f1f1f1;
 }
 
 .contributors-welcome {
@@ -172,8 +172,8 @@ li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
-    text-align: justify;
+    text-align: left;
+    width: 100%;
 }
 
 .members h3 {
@@ -182,14 +182,31 @@ li a:hover {
 
 .members div {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 3rem;
-    width: 80%;
+    width: 60vw;
     margin: 0 auto 1.5rem;
     padding: 30px;
     background-color: #fff;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 
     font-size: 1.2rem;
-    line-height: 1.75rem;
+}
+
+/* -------------------- Responsive Web Design -------------------- */
+
+/* Tablet Displays */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    #navigation-bar ul {
+        display: flex;
+    }
 }
