@@ -78,10 +78,6 @@ form {
     border-radius: 50%;
 }
 
-.container input:checked ~ .checkmark {
-    background-color: green;
-}
-
 /* Radio button colors when checked */
 
 #r1:checked ~ .checkmark {
