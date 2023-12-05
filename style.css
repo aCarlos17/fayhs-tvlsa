@@ -68,17 +68,17 @@ body {
     margin: 0;
 }
 
-li {
+#navigation-bar ul li {
     display: inline;
 }
 
-li a {
+#navigation-bar ul li a {
     text-decoration: none;
     color: #fff;
     padding: 1rem;
 }
 
-li a:hover {
+#navigation-bar ul li a:hover {
     background-color: #000;
 }
 
@@ -415,7 +415,7 @@ li a:hover {
 .tos-content {
     font-size: 11px;
     text-align: justify;
-    box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
     background-color: #f7f7f7;
     height: 40%;
     padding: 1rem;
