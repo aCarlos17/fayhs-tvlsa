@@ -1,9 +1,11 @@
 let start = [document.getElementById('start-top'), document.getElementById('start-bottom'), document.getElementById('start-tos')]
 let tosPrompt = document.getElementById('tos')
 let tosAgree = document.getElementsByName('tos-agree-choice')
+let backScroll = document.getElementsByTagName('body')[0]
 
 start[0].onclick = function() {
     tosPrompt.style.display = "flex"
+    backScroll.style.overflow = "hidden"
 
     tosAgree[0].checked = false
     tosAgree[1].checked = false
@@ -11,6 +13,7 @@ start[0].onclick = function() {
 
 start[1].onclick = function() {
     tosPrompt.style.display = "flex"
+    backScroll.style.overflow = "hidden"
 
     tosAgree[0].checked = false
     tosAgree[1].checked = false
@@ -18,6 +21,7 @@ start[1].onclick = function() {
 
 document.getElementById('close').onclick = function() {
     tosPrompt.style.display = "none"
+    backScroll.style.overflow = "auto"
 }
 
 let n
@@ -31,5 +35,6 @@ start[2].addEventListener('click', function(){
     }
     else if (n == 0) {
         tosPrompt.style.display = "none"
+        backScroll.style.overflow = "auto"
     }
 })
