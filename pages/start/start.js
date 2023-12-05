@@ -82,13 +82,20 @@ class Checkmarks {
 
 Myclass.clean_select();
 
-document.getElementById('button').addEventListener('click', function() {
 
-    // DeclareVariables.Variables();
+
+// document.getElementById('button').addEventListener('click', function() {
+
+//     declareVariable.Variables();
+//     Myclass.check_select();
+//     Myclass.clean_select();
+    
+// });
+
+document.getElementById('button').onclick = function() {
     Myclass.check_select();
     Myclass.clean_select();
-    
-});
+}
 
 
 /* 

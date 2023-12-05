@@ -82,6 +82,28 @@ form {
     background-color: green;
 }
 
+/* Radio button colors when checked */
+
+#r1:checked ~ .checkmark {
+    background-color: #00c90a;
+}
+
+#r2:checked ~ .checkmark {
+    background-color: green;
+}
+
+#r3:checked ~ .checkmark {
+    background-color: gray;
+}
+
+#r4:checked ~ .checkmark {
+    background-color: #c90000;
+}
+
+#r5:checked ~ .checkmark {
+    background-color: red;
+}
+
 #q1 button {
     border: none;
     background-color: green;
