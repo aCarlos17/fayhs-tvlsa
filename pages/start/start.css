@@ -81,23 +81,23 @@ form {
 /* Radio button colors when checked */
 
 #r1:checked ~ .checkmark {
-    background-color: #00c90a;
+    background-color: #008000;
 }
 
 #r2:checked ~ .checkmark {
-    background-color: green;
+    background-color: #3a6000cd;
 }
 
 #r3:checked ~ .checkmark {
-    background-color: gray;
+    background-color: #5f400088;
 }
 
 #r4:checked ~ .checkmark {
-    background-color: #c90000;
+    background-color: #832100cd;
 }
 
 #r5:checked ~ .checkmark {
-    background-color: red;
+    background-color: #be0000;
 }
 
 #q1 button {

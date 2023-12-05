@@ -39,12 +39,12 @@ let questions =  {
             "I want to learn how to create motion graphics for websites, video games, or visual effects.",
         ],
 
-    "cookery" :
-    [
-        "I want to improve my experience in preparing food.",
-        "I want to learn the fundamentals of cooking, including hygiene standards.",
-        "I am conscious of my cleanliness.",
-    ]    
+        "cookery" :
+        [
+            "I want to improve my experience in preparing food.",
+            "I want to learn the fundamentals of cooking, including hygiene standards.",
+            "I am conscious of my cleanliness.",
+        ]    
 }
 
 class Checkmarks {
