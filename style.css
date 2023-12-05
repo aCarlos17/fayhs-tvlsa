@@ -429,8 +429,8 @@ li a:hover {
 
 .tos-after_read {
     font-size: 12px;
-    display: flex;
-    height: 10rem;
+    padding: 1rem;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -441,6 +441,7 @@ li a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 /* -------------------- Responsive Web Design -------------------- */
