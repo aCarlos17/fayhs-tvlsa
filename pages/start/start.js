@@ -29,21 +29,34 @@ let questions =  {
 
     "tourism" :
         [
-            "I respect the cultural differences and beliefs of others.",
+            "I respect cultural differences and beliefs of others.",
+            "I can effectively persuade others with information that is provided to me.",
+            "I have a basic knowledge on how to use phones, computers, and such.",
+            "I know how to look for good legitimate information on the web and on other sources.",
+            "I feel confident navigating digital tools.",
+            "I am able to provide useful advice about directions and the like.",
+            "I understand what other people want other than my own.",
+            "I find it easy to connect to other people on a personal level.",
+            "I can create a sense of trust when conversing with other people.",
+            "I am good when it comes to persuading people on different topics."
         ],
 
     "animation" :
         [
-            "I am interested in how drawings come to life.",
+            "I can perform basic calculations and basic measuring.",
             "I want to improve my drawing skills.",
-            "I want to learn how to create motion graphics for websites, video games, or visual effects.",
+            "I can implement my ideas and imaginations on paper.",
+            "I have times where I sketch on my notebook whenever I'm bored.",
+            "I am comfortable working over time.",
+            "I have a good sense of timing and spacing.",
+            "I am good at expressing when it comes to illustrating or drawing.",
+            "I have a good understanding of human and animal movement."
         ],
 
         "cookery" :
         [
             "I want to improve my experience in preparing food.",
             "I want to learn the fundamentals of cooking, including hygiene standards.",
-            "I am conscious of my cleanliness.",
         ]    
 }
 
