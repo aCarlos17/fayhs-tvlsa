@@ -10,7 +10,7 @@ body {
 	text-align: justify;
 
     margin: 0;
-    padding: 3rem 0;
+    padding: 0;
 }
 
 h1 {text-align: center;}
@@ -51,6 +51,7 @@ h1 {text-align: center;}
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .bars {
@@ -72,3 +73,5 @@ h1 {text-align: center;}
 #four {background-color: #1321bc80;}
 
 .strands {text-align: left;}
+
+#strand-description {text-align: justify;}
