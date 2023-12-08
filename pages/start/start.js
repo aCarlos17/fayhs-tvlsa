@@ -117,12 +117,3 @@ document.getElementById('button').onclick = function() {
  redirect to the respected result
  idk, do whatever
 */
-
-// ----------------------------- result.html ----------------------------- //
-
-let prog = document.getElementById('one')
-let cook = document.getElementById('two')
-let tour = document.getElementById('three')
-let antn = document.getElementById('four')
-
-prog.style.width = '5rem'
