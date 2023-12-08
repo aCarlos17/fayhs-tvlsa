@@ -47,6 +47,7 @@ h1 {text-align: center;}
 #stats {
     display: flex;
     align-items: center;
+    width: auto;
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -72,3 +73,19 @@ h1 {text-align: center;}
 .strands {text-align: left;}
 
 #strand-description {text-align: justify;}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    #content {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: start;
+    }
+
+    #strand-result-2 {
+        align-items: flex-end;
+    }
+}
