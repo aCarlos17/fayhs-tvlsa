@@ -10,20 +10,19 @@ body {
 	text-align: justify;
 
     margin: 0;
-    padding: 0;
+    padding: 3rem;
 }
 
 h1 {text-align: center;}
 
 #content {
     text-align: center;
-    height: 100vh;
-    padding: 4rem 0;
+    width: 100%;
+    height: 200%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 3rem;
+    justify-content: center;
 }
 
 #strand-result {
@@ -42,9 +41,7 @@ h1 {text-align: center;}
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     width: 100%;
-    height: 70vh;
 }
 
 #stats {
