@@ -1,5 +1,3 @@
-
-
 let questions =  {
     "programming" : 
         [
@@ -51,44 +49,4 @@ let questions =  {
             "I want to improve my experience in preparing food.",
             "I want to learn the fundamentals of cooking, including hygiene standards.",
         ]    
-}
-
-
-// This is a class that gatheres all the values and turn in 
-// into a variable
- 
-class Variables {
-    constructor() {
-        this.checkbox = document.getElementsByName('radio');
-        this.nextbutton = document.getElementById('button');
-        this.questionIs = questions[label][0];
-    }
-} let myvariables = new Variables
-
-class EventJanitor {
-
-    constructor() {
-        this.flag = 0;
-        this.number_of_boxes = 5;
-    }
-
-    check_select() {
-        for (this.flag; this.flag < this.number_of_boxes; this.flag++) {
-            if(myvariables.checkbox[this.flag].checked == true) {
-                document.getElementById('question').innerHTML = myvariables.questionIs;
-            }
-        }
-    }
-
-    clean_select() {
-
-        for (this.flag = 0; this.flag < this.number_of_boxes; this.flag++) {
-            myvariables.checkbox[this.flag] = false;
-        }
-    }
-} let eventjanitor = new EventJanitor
-
-myvariables.nextbutton.onclick = function() {
-    eventjanitor.check_select();
-    eventjanitor.clean_select();
 }
