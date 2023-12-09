@@ -165,16 +165,16 @@ body {
 
 .welcome, .start-now_ready {
     font-size: 2.5rem;
-    margin: 0 0 4rem;
+    margin: 0 0 1rem;
     font-weight: 600;
     line-height: 3rem;
 }
 
-.welcome span {
-    margin: 0;
+.welcome2 {
+    margin: 0 0 3rem;
     font-size: 1.3rem;
-    line-height: 0;
     font-weight: 500;
+    line-height: 1.5rem;
 }
 
 .start-now_ready {
