@@ -440,7 +440,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     align-items: baseline;
-    margin: auto auto 0;
+    margin: auto auto 1rem;
 }
 
 .radio-buttons p {
