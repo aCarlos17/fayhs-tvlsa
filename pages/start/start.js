@@ -61,7 +61,6 @@ class Variables {
     constructor() {
         this.checkbox = document.getElementsByName('radio');
         this.nextbutton = document.getElementById('button');
-        this.questionIs = questions[label][0];
     }
 } let myvariables = new Variables
 
@@ -75,7 +74,7 @@ class EventJanitor {
     check_select() {
         for (this.flag; this.flag < this.number_of_boxes; this.flag++) {
             if(myvariables.checkbox[this.flag].checked == true) {
-                document.getElementById('question').innerHTML = myvariables.questionIs;
+                alert(this.flag)
             }
         }
     }
@@ -87,6 +86,13 @@ class EventJanitor {
         }
     }
 } let eventjanitor = new EventJanitor
+
+class question_event {
+    constructor() {
+        // this.current_question = questions[random_tag][random_index]
+        this.question_is = document.getElementById('question');
+    }
+}
 
 myvariables.nextbutton.onclick = function() {
     eventjanitor.check_select();
