@@ -1,3 +1,6 @@
+//import a variable:
+//  import { nopls } from '../start/start.js'
+
 //bars
 let prog = document.getElementById('one')
 let cook = document.getElementById('two')

@@ -123,3 +123,7 @@ myvariables.nextbutton.onclick = function() {
     eventjanitor.check_select();
     eventjanitor.clean_select();
 }
+
+
+//export a variable:
+//  export let nopls = 5
