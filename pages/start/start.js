@@ -58,7 +58,7 @@ let questions =  {
             "<h1>I am able to stay motivated and committed to a project until it is completed.</h1><p>(Nakakaya ko na manatiling motivated at nakatuon sa isang proyekto hanggang sa matapos iyon.)</p>"
         ],
 
-        "cookery" :
+    "cookery" :
         [
             "<h1>I enjoy experimenting with diverse processes and techniques.</h1><p>(Nasisiyahan akong mag-eksperimento sa magkakaibang proseso at pamamaraan.)</p>",
             "<h1>I am comfortable using a variety of tools and equipment.</h1><p>(Komportable akong gumamit ng iba't ibang kagamitan.)</p>",
@@ -117,6 +117,10 @@ class question_event {
         // this.current_question = questions[random_tag][random_index]
         this.question_is = document.getElementById('question');
     }
+}
+
+function random_pick() {
+
 }
 
 myvariables.nextbutton.onclick = function() {
