@@ -119,9 +119,26 @@ class question_event {
     }
 }
 
-function random_pick() {
-
-}
+function random_pick(questions) {
+    // Get an array of the keys in the object
+    let strand = Object.keys(questions);
+    // Check if the object is empty
+    if (strand.length == 0) {
+      // If so, print a message and return
+      console.log("bump");
+      return;
+    }
+    // Otherwise, pick a random key from the array
+    let randomKey = Math.floor(Math.random() * strand.length);
+    // Get the array of values corresponding to the key
+    let values = questions[strand[randomKey]];
+    // Pick a random value from the array
+    let randomValue = values[Math.floor(Math.random() * values.length)];
+    // Print the random value
+    console.log(randomValue);
+    // Delete the key-value pair from the object
+    delete questions[randomKey];
+  }
 
 myvariables.nextbutton.onclick = function() {
     eventjanitor.check_select();
