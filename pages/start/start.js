@@ -107,7 +107,7 @@ class EventJanitor {
     clean_select() {
 
         for (this.flag = 0; this.flag < this.number_of_boxes; this.flag++) {
-            myvariables.checkbox[this.flag] = false;
+            //myvariables.checkbox[this.flag] = false;
         }
     }
 } let eventjanitor = new EventJanitor
@@ -120,6 +120,9 @@ class question_event {
 }
 
 function random_pick(questions) {
+
+    // Code generated from Bing AI
+
     // Get an array of the keys in the object
     let strand = Object.keys(questions);
     // Check if the object is empty
@@ -137,7 +140,7 @@ function random_pick(questions) {
     // Get the value at the random index
     let randomValue = values[randomIndex];
     // Print the random value
-    console.log(randomValue);
+    
     // Remove the value from the array using splice
     values.splice(randomIndex, 1);
     // Check if the array is empty
@@ -145,10 +148,20 @@ function random_pick(questions) {
         // If so, delete the key from the object
         delete questions[strand[randomKey]];
     }
+
+    return randomValue;
 }
+
+eventjanitor.clean_select();
+let sample = random_pick(questions)
+document.getElementById('question').innerHTML = sample
+
+
 myvariables.nextbutton.onclick = function() {
     eventjanitor.check_select();
     eventjanitor.clean_select();
+
+    document.getElementById('question').innerHTML = sample
 }
 
 
