@@ -132,14 +132,20 @@ function random_pick(questions) {
     let randomKey = Math.floor(Math.random() * strand.length);
     // Get the array of values corresponding to the key
     let values = questions[strand[randomKey]];
-    // Pick a random value from the array
-    let randomValue = values[Math.floor(Math.random() * values.length)];
+    // Pick a random index from the array
+    let randomIndex = Math.floor(Math.random() * values.length);
+    // Get the value at the random index
+    let randomValue = values[randomIndex];
     // Print the random value
     console.log(randomValue);
-    // Delete the key-value pair from the object
-    delete questions[randomKey];
-  }
-
+    // Remove the value from the array using splice
+    values.splice(randomIndex, 1);
+    // Check if the array is empty
+    if (values.length == 0) {
+        // If so, delete the key from the object
+        delete questions[strand[randomKey]];
+    }
+}
 myvariables.nextbutton.onclick = function() {
     eventjanitor.check_select();
     eventjanitor.clean_select();
