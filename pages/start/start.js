@@ -139,7 +139,6 @@ function random_pick(questions) {
     let randomIndex = Math.floor(Math.random() * values.length);
     // Get the value at the random index
     let randomValue = values[randomIndex];
-    // Print the random value
     
     // Remove the value from the array using splice
     values.splice(randomIndex, 1);
@@ -150,13 +149,13 @@ function random_pick(questions) {
     }
 
     return randomValue;
-}
+}  // to test: for (let i = 0; i < 60; i++) { random_pick(questions) }
+
+let random_questions = random_pick(questions)
 
 myvariables.nextbutton.onclick = function() {
     eventjanitor.check_select();
     eventjanitor.clean_select();
-
-    document.getElementById('question').innerHTML = sample
 }
 
 
