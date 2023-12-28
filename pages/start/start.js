@@ -86,9 +86,8 @@ class Variables {
     constructor() {
         this.checkbox = document.getElementsByName('radio');
         this.nextbutton = document.getElementById('button');
-        this.questions = document.getElementById('question')
     }
-} let myvariables = new Variables
+} let myvariables = new Variables()
 
 class EventJanitor {
 
@@ -103,22 +102,26 @@ class EventJanitor {
                 alert(this.flag)
             }
         }
+
+        this.flag = 0;
     }
 
     clean_select() {
 
-        for (this.flag = 0; this.flag < this.number_of_boxes; this.flag++) {
-            //myvariables.checkbox[this.flag] = false;
+        for (this.flag; this.flag < this.number_of_boxes; this.flag++) {
+            myvariables.checkbox[this.flag].checked = false;
         }
-    }
-} let eventjanitor = new EventJanitor
 
-class question_event {
+        this.flag = 0;
+    }
+} let eventjanitor = new EventJanitor()
+
+class questionEvent {
     constructor() {
         // this.current_question = questions[random_tag][random_index]
         this.question_is = document.getElementById('question');
     }
-}
+} let question_event = new questionEvent()
 
 function random_pick(questions) {
 
@@ -150,14 +153,17 @@ function random_pick(questions) {
     }
 
     return randomValue;
-}  // to test: for (let i = 0; i < 60; i++) { random_pick(questions) }
+}
+
+eventjanitor.clean_select()
 
 let random_questions = random_pick(questions)
-myvariables.questions.innerHTML = random_questions
+question_event.question_is.innerHTML = random_questions
 
 myvariables.nextbutton.onclick = function() {
     eventjanitor.check_select();
     eventjanitor.clean_select();
+    question_event.question_is.innerHTML = random_questions
 }
 
 
