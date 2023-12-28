@@ -157,13 +157,12 @@ function random_pick(questions) {
 
 eventjanitor.clean_select()
 
-let random_questions = random_pick(questions)
-question_event.question_is.innerHTML = random_questions
+question_event.question_is.innerHTML = random_pick(questions)
 
 myvariables.nextbutton.onclick = function() {
     eventjanitor.check_select();
     eventjanitor.clean_select();
-    question_event.question_is.innerHTML = random_questions
+    question_event.question_is.innerHTML = random_pick(questions)
 }
 
 
