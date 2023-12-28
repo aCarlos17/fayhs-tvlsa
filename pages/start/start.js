@@ -86,6 +86,7 @@ class Variables {
     constructor() {
         this.checkbox = document.getElementsByName('radio');
         this.nextbutton = document.getElementById('button');
+        this.questions = document.getElementById('question')
     }
 } let myvariables = new Variables
 
@@ -152,6 +153,7 @@ function random_pick(questions) {
 }  // to test: for (let i = 0; i < 60; i++) { random_pick(questions) }
 
 let random_questions = random_pick(questions)
+myvariables.questions.innerHTML = random_questions
 
 myvariables.nextbutton.onclick = function() {
     eventjanitor.check_select();
