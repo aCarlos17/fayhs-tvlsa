@@ -87,7 +87,7 @@ class Variables {
         this.checkbox = document.getElementsByName('radio');
         this.nextbutton = document.getElementById('button');
     }
-} let myvariables = new Variables
+} let myvariables = new Variables()
 
 class EventJanitor {
 
@@ -102,32 +102,67 @@ class EventJanitor {
                 alert(this.flag)
             }
         }
+
+        this.flag = 0;
     }
 
     clean_select() {
 
-        for (this.flag = 0; this.flag < this.number_of_boxes; this.flag++) {
-            //myvariables.checkbox[this.flag] = false;
+        for (this.flag; this.flag < this.number_of_boxes; this.flag++) {
+            myvariables.checkbox[this.flag].checked = false;
         }
-    }
-} let eventjanitor = new EventJanitor
 
-class question_event {
+        this.flag = 0;
+    }
+} let eventjanitor = new EventJanitor()
+
+class questionEvent {
     constructor() {
         // this.current_question = questions[random_tag][random_index]
         this.question_is = document.getElementById('question');
     }
-}
+} let question_event = new questionEvent()
 
 function random_pick() {
 
+    // Code generated from Bing AI
+
+    // Get an array of the keys in the object
+    let strand = Object.keys(questions);
+    // Check if the object is empty
+    if (strand.length == 0) {
+      // If so, print a message and return
+      console.log("bump");
+      return;
+    }
+    // Otherwise, pick a random key from the array
+    let randomKey = Math.floor(Math.random() * strand.length);
+    // Get the array of values corresponding to the key
+    let values = questions[strand[randomKey]];
+    // Pick a random index from the array
+    let randomIndex = Math.floor(Math.random() * values.length);
+    // Get the value at the random index
+    let randomValue = values[randomIndex];
+    
+    // Remove the value from the array using splice
+    values.splice(randomIndex, 1);
+    // Check if the array is empty
+    if (values.length == 0) {
+        // If so, delete the key from the object
+        delete questions[strand[randomKey]];
+    }
+
+    return randomValue;
 }
+
+eventjanitor.clean_select()
+
+question_event.question_is.innerHTML = random_pick(questions)
 
 myvariables.nextbutton.onclick = function() {
     eventjanitor.check_select();
     eventjanitor.clean_select();
-
-    document.getElementById('question').innerHTML = sample
+    question_event.question_is.innerHTML = random_pick(questions)
 }
 
 
