@@ -125,34 +125,6 @@ class questionEvent {
 
 function random_pick() {
 
-    // Code generated from Bing AI
-
-    // Get an array of the keys in the object
-    let strand = Object.keys(questions);
-    // Check if the object is empty
-    if (strand.length == 0) {
-      // If so, print a message and return
-      console.log("bump");
-      return;
-    }
-    // Otherwise, pick a random key from the array
-    let randomKey = Math.floor(Math.random() * strand.length);
-    // Get the array of values corresponding to the key
-    let values = questions[strand[randomKey]];
-    // Pick a random index from the array
-    let randomIndex = Math.floor(Math.random() * values.length);
-    // Get the value at the random index
-    let randomValue = values[randomIndex];
-    
-    // Remove the value from the array using splice
-    values.splice(randomIndex, 1);
-    // Check if the array is empty
-    if (values.length == 0) {
-        // If so, delete the key from the object
-        delete questions[strand[randomKey]];
-    }
-
-    return randomValue;
 }
 
 eventjanitor.clean_select()
