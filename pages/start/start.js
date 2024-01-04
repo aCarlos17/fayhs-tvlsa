@@ -1,5 +1,6 @@
 
 
+
 let questions =  {
     "programming" : 
         [
@@ -99,7 +100,7 @@ class EventJanitor {
     check_select() {
         for (this.flag; this.flag < this.number_of_boxes; this.flag++) {
             if(myvariables.checkbox[this.flag].checked == true) {
-                alert(this.flag)
+                //edit here
             }
         }
 
@@ -132,7 +133,7 @@ function random_pick(questions) {
     // Check if the object is empty
     if (strand.length == 0) {
       // If so, print a message and return
-      console.log("bump");
+      myvariables.nextbutton.innerHTML = "See Results";
       return;
     }
     // Otherwise, pick a random key from the array
@@ -160,9 +161,16 @@ eventjanitor.clean_select()
 question_event.question_is.innerHTML = random_pick(questions)
 
 myvariables.nextbutton.onclick = function() {
-    eventjanitor.check_select();
-    eventjanitor.clean_select();
-    question_event.question_is.innerHTML = random_pick(questions)
+    if (myvariables.nextbutton.innerHTML == "See Results") {
+        
+    }
+    else {
+        eventjanitor.check_select();
+        eventjanitor.clean_select();
+        question_event.question_is.innerHTML = random_pick(questions)
+    }
+
+    
 }
 
 
