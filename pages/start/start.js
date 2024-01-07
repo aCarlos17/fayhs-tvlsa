@@ -1,5 +1,9 @@
 
 
+let prog = 0
+let tour = 0
+let cook = 0 
+let anim = 0
 
 let questions =  {
     "programming" : 
@@ -91,16 +95,84 @@ class Variables {
 } let myvariables = new Variables()
 
 class EventJanitor {
-
     constructor() {
         this.flag = 0;
         this.number_of_boxes = 5;
+        this.radioValue = 0;
+        this.strand = Object.keys(questions);
     }
 
     check_select() {
         for (this.flag; this.flag < this.number_of_boxes; this.flag++) {
-            if(myvariables.checkbox[this.flag].checked == true) {
-                //edit here
+            if (myvariables.checkbox[this.flag].checked == true) {
+                this.radioValue = this.flag;
+
+                switch (this.radioValue) {
+                    case 4:
+                        switch (this.strand[this.flag]) {
+                            case "programming":
+                                prog += 4;
+                                break;
+                            case "tourism":
+                                tour += 4;
+                                break;
+                            case "animation":
+                                anim += 4;
+                                break;
+                            case "cookery":
+                                cook += 4;
+                                break;
+                        }
+                        break;
+                    case 3:
+                        switch (this.strand[this.flag]) {
+                            case "programming":
+                                prog += 3;
+                                break;
+                            case "tourism":
+                                tour += 3;
+                                break;
+                            case "animation":
+                                anim += 3;
+                                break;
+                            case "cookery":
+                                cook += 3;
+                                break;
+                        }
+                        break;
+                    case 2:
+                        switch (this.strand[this.flag]) {
+                            case "programming":
+                                prog += 2;
+                                break;
+                            case "tourism":
+                                tour += 2;
+                                break;
+                            case "animation":
+                                anim += 2;
+                                break;
+                            case "cookery":
+                                cook += 2;
+                                break;
+                        }
+                        break;
+                    case 1:
+                        switch (this.strand[this.flag]) {
+                            case "programming":
+                                prog += 1;
+                                break;
+                            case "tourism":
+                                tour += 1;
+                                break;
+                            case "animation":
+                                anim += 1;
+                                break;
+                            case "cookery":
+                                cook += 1;
+                                break;
+                        }
+                        break;
+                }
             }
         }
 
@@ -108,14 +180,16 @@ class EventJanitor {
     }
 
     clean_select() {
-
         for (this.flag; this.flag < this.number_of_boxes; this.flag++) {
             myvariables.checkbox[this.flag].checked = false;
         }
 
         this.flag = 0;
     }
-} let eventjanitor = new EventJanitor()
+}
+
+let eventjanitor = new EventJanitor();
+
 
 class questionEvent {
     constructor() {
@@ -167,6 +241,7 @@ myvariables.nextbutton.onclick = function() {
     else {
         eventjanitor.check_select();
         eventjanitor.clean_select();
+        
         question_event.question_is.innerHTML = random_pick(questions)
     }
 
@@ -174,5 +249,5 @@ myvariables.nextbutton.onclick = function() {
 }
 
 
-//export a variable:
-//  export let nopls = 5
+// Call this function when needed, such as after checking the selections
+// and before updating the next question.
