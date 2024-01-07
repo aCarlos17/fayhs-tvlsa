@@ -82,10 +82,6 @@ let questions =  {
             "<h1>I am efficient in going back and forth between different tasks.</h1><p>(Mahusay ako pagdating sa multitasking.)</p>"
         ]    
 }
-
-
-// This is a class that gatheres all the values and turn in 
-// into a variable
  
 class Variables {
     constructor() {
@@ -103,10 +99,10 @@ class EventJanitor {
     }
 
     check_select() {
-        for (this.flag; this.flag < this.number_of_boxes; this.flag++) {
+        for (this.flag = 0; this.flag < this.number_of_boxes; this.flag++) {
             if (myvariables.checkbox[this.flag].checked == true) {
                 this.radioValue = this.flag;
-
+    
                 switch (this.radioValue) {
                     case 4:
                         switch (this.strand[this.flag]) {
@@ -175,9 +171,9 @@ class EventJanitor {
                 }
             }
         }
-
         this.flag = 0;
     }
+    
 
     clean_select() {
         for (this.flag; this.flag < this.number_of_boxes; this.flag++) {
@@ -247,7 +243,3 @@ myvariables.nextbutton.onclick = function() {
 
     
 }
-
-
-// Call this function when needed, such as after checking the selections
-// and before updating the next question.
