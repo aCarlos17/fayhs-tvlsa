@@ -1,5 +1,3 @@
-
-
 let prog = 0
 let tour = 0
 let cook = 0 
@@ -105,7 +103,7 @@ class EventJanitor {
     
                 switch (this.radioValue) {
                     case 4:
-                        switch (this.strand[this.flag]) {
+                        switch (keyval) {
                             case "programming":
                                 prog += 4;
                                 break;
@@ -121,7 +119,7 @@ class EventJanitor {
                         }
                         break;
                     case 3:
-                        switch (this.strand[this.flag]) {
+                        switch (keyval) {
                             case "programming":
                                 prog += 3;
                                 break;
@@ -137,7 +135,7 @@ class EventJanitor {
                         }
                         break;
                     case 2:
-                        switch (this.strand[this.flag]) {
+                        switch (keyval) {
                             case "programming":
                                 prog += 2;
                                 break;
@@ -153,7 +151,7 @@ class EventJanitor {
                         }
                         break;
                     case 1:
-                        switch (this.strand[this.flag]) {
+                        switch (keyval) {
                             case "programming":
                                 prog += 1;
                                 break;
@@ -194,7 +192,7 @@ class questionEvent {
     }
 } let question_event = new questionEvent()
 
-function random_pick() {
+function random_pick(questions) {
 
     // Code generated from Bing AI
 
@@ -223,12 +221,16 @@ function random_pick() {
         delete questions[strand[randomKey]];
     }
 
-    return randomValue;
+    return { key: strand[randomKey], value: randomValue };
 }
 
 eventjanitor.clean_select()
 
-question_event.question_is.innerHTML = random_pick(questions)
+let question_dic = random_pick(questions)
+let keyval = question_dic.key
+let logq = question_dic.value
+
+question_event.question_is.innerHTML = logq
 
 myvariables.nextbutton.onclick = function() {
     if (myvariables.nextbutton.innerHTML == "See Results") {
@@ -237,8 +239,12 @@ myvariables.nextbutton.onclick = function() {
     else {
         eventjanitor.check_select();
         eventjanitor.clean_select();
+
+        question_dic = random_pick(questions)
+        keyval = question_dic.key
+        logq = question_dic.value
         
-        question_event.question_is.innerHTML = random_pick(questions)
+        question_event.question_is.innerHTML = logq
     }
 
     
