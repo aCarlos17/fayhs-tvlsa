@@ -231,6 +231,7 @@ let keyval = question_dic.key
 let logq = question_dic.value
 
 question_event.question_is.innerHTML = logq
+console.log(prog, anim, cook, tour)
 
 myvariables.nextbutton.onclick = function() {
     if (myvariables.nextbutton.innerHTML == "See Results") {
@@ -245,7 +246,13 @@ myvariables.nextbutton.onclick = function() {
         logq = question_dic.value
         
         question_event.question_is.innerHTML = logq
+        console.log(prog, anim, cook, tour)
     }
 
     
 }
+
+export let prog_final = prog;
+export let anim_final = anim;
+export let cook_final = cook;
+export let tour_final = tour;

@@ -1,5 +1,4 @@
-//import a variable:
-//  import { nopls } from '../start/start.js'
+import { prog_final, anim_final, cook_final, tour_final } from '../start/start.js'
 
 //bars
 let prog = document.getElementById('one')
