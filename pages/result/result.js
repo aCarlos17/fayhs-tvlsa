@@ -1,4 +1,4 @@
-import { prog_final, anim_final, cook_final, tour_final } from '../start/start.js'
+//import { sample } from '../start/start.js'
 
 //bars
 let prog = document.getElementById('one')
@@ -12,10 +12,10 @@ let strand = document.getElementById('strand-title')
 let img = document.getElementById('strand-img')
 
 //strand img
-let prog_img = '../../../images/programming.png'
-let cook_img = '../../../images/cookery.png'
-let tour_img = '../../../images/tourism-promotion-services.png'
-let anme_img = '../../../images/animation.png'
+let prog_img = '../../images/programming.png'
+let cook_img = '../../images/cookery.png'
+let tour_img = '../../images/tourism-promotion-services.png'
+let anme_img = '../../images/animation.png'
 
 // img.src = prog_img <--- an example on how to change img using js
 

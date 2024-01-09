@@ -235,9 +235,16 @@ console.log(prog, anim, cook, tour)
 
 myvariables.nextbutton.onclick = function() {
     if (myvariables.nextbutton.innerHTML == "See Results") {
-        
+        window.location.href = "../result/result.html"
     }
     else {
+        const isAnyChecked = Array.from(myvariables.checkbox).some(checkbox => checkbox.checked);
+
+        if (!isAnyChecked) {
+            alert("Please select an option before proceeding.");
+            return;
+        }
+
         eventjanitor.check_select();
         eventjanitor.clean_select();
 
@@ -251,8 +258,3 @@ myvariables.nextbutton.onclick = function() {
 
     
 }
-
-export let prog_final = prog;
-export let anim_final = anim;
-export let cook_final = cook;
-export let tour_final = tour;
