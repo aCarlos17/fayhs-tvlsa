@@ -235,8 +235,10 @@ console.log(prog, anim, cook, tour)
 
 myvariables.nextbutton.onclick = function() {
     if (myvariables.nextbutton.innerHTML == "See Results") {
-        window.location.href = "../result/result.html"
+        // Redirect with URL parameters
+        window.location.href = `../result/result.html?prog=${prog}&anim=${anim}&tour=${tour}&cook=${cook}`;
     }
+
     else {
         const isAnyChecked = Array.from(myvariables.checkbox).some(checkbox => checkbox.checked);
 
