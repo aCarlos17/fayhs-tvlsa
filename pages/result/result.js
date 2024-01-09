@@ -3,10 +3,10 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 // Get values
-const prog = urlParams.get('prog');
-const anme = urlParams.get('anim');
-const tour = urlParams.get('tour');
-const cook = urlParams.get('cook');
+const prog = parseInt(urlParams.get('prog'))
+const anme = parseInt(urlParams.get('anim'))
+const tour = parseInt(urlParams.get('tour'))
+const cook = parseInt(urlParams.get('cook'))
 
 //bars
 let prog_bar = document.getElementById('one')
