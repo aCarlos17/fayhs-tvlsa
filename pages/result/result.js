@@ -37,10 +37,24 @@ let cook_desc = "The Cookery strand of Flora A. Ylagan High School will develop 
 let tour_desc = "The Tourism Promotion Services strand of Flora A. Ylagan High School is designed to provide students with a comprehensive understanding of the tourism industry. Learners are expected to learn how to operate an Automated Information System (AIS) to. The course will also provide lessons to source and provide destination and information advice. This involves learning about various tourist destinations, their attractions, and how to effectively communicate this information to clients. Students will also be trained to access and interpret product information. Lastly, one of the key aspects of the course is teaching students how to effectively promote tourism products and services. This involves learning marketing and sales techniques specific to the tourism industry."
 let anme_desc = "The Animation strand of Flora A. Ylagan High School will equip the learners with the competencies they need in preparation for careers in computer animation, multimedia, and special effects for film, television, and video production. The topics in this strand range from the proper usage and maintenance of tools, equipment, and paraphernalia that are specified within the specialised field, basic drawing to digital illustration and animation, and producing cleaned-up and in-between drawings in both production and post-production stages."
 
+//Why [strand]?
+let why_prog = "Why Programming?"
+let why_cook = "Why Cookery?"
+let why_tour = "Why Tourism Promotion Services?"
+let why_anme = "Why Animation?"
+
+//Reasoning
+let prog_cuz = ""
+let cook_cuz = ""
+let tour_cuz = ""
+let anme_cuz = ""
+
 //to be changed
 let desc = document.getElementById('strand-description')
 let strand = document.getElementById('strand-title')
 let img = document.getElementById('strand-img')
+let why = document.getElementById('why-strand')
+let reasoning = document.getElementById('reasoning')
 
 const values = [prog, anme, cook, tour]
 const greatestValue = values.indexOf(Math.max(...values));
