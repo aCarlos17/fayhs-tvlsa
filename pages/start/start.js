@@ -201,6 +201,7 @@ function random_pick(questions) {
     // Check if the object is empty
     if (strand.length == 0) {
       // If so, print a message and return
+      question_event.question_is.innerHTML = '<h1>Click "See Results" to see your recommended strand.</h1>'
       myvariables.nextbutton.innerHTML = "See Results";
       return;
     }
