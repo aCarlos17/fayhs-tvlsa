@@ -384,13 +384,13 @@ body {
     height: 100%;
     overflow: visible;
     background-color: rgba(0,0,0,0.4); 
+    overflow: scroll;
 }
 
 .tos-prompt {
     background-color: #fff;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
     margin: 3rem auto;
-    /* padding: 20px 20px; */
     width: 80%;
     height: 600px;
 }
@@ -415,11 +415,8 @@ body {
     text-align: justify;
     box-shadow: inset 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
     background-color: #f7f7f7;
-    height: 40%;
     padding: 1rem;
     margin: 0;
-    overflow: scroll;
-    overflow-x: hidden;
 }
 
 .tos-content ol { padding-left: 1rem; }
@@ -433,6 +430,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 
 .radio-buttons {
