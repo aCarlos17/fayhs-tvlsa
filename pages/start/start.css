@@ -32,6 +32,40 @@ body {
     text-align: center;
 }
 
+.instructions-prompt p {
+    margin-bottom: 5rem;
+}
+
+.instructions-content {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.images {
+    width: 100%;
+}
+
+.start-button {
+    text-decoration: none;
+    color: #ffffff;
+
+    display: block;
+    border-radius: 30px;
+
+    border: none;
+    background-color: #1c973e;
+
+    padding: 12px;
+    font-size: 12px;
+    padding-left: 1.5rem; padding-right: 1.5rem;
+    box-shadow: none;
+    margin: 0 auto;
+}
+
+.start-button:hover {
+    background-color: #1a7f37;
+}
+
 /* The test */
 #content {
     height: 100vh;
