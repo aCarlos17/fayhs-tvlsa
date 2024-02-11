@@ -225,6 +225,10 @@ function random_pick(questions) {
 
 eventjanitor.clean_select()
 
+document.getElementById('start-test').onclick = function(){
+    document.getElementById('instructions').style.display = 'none'
+}
+
 let question_dic = random_pick(questions)
 let keyval = question_dic.key
 let logq = question_dic.value
