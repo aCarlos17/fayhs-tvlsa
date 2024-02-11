@@ -13,7 +13,7 @@ let questions =  {
             "<h1>I can handle unexpected challenges and solve problems efficiently.</h1><p>(Kaya kong harapin ang mga hindi inaasahang hamon at malutas ang mga problema nang mahusay.)</p>",
             "<h1>I am confident in my problem-solving abilities and my logical thinking.</h1><p>(Tiwala ako sa aking mga kakayahan sa paglutas ng problema at sa aking lohikal na pag iisip.)</p>",
             "<h1>I am confident in my ability to apply mathematical principles to solve problems.</h1><p>(Tiwala ako sa kakayahan kong gamitin ang mga prinsipyo sa matematika para malutas ang mga problema.)</p>",
-            "<h1>I actively seek to stay updated on new, emerging technologies today and tomorrow.</h1><p>(Nananatili akong updated sa mga bago, umuusbong na teknolohiya ngayon at magpakailanman.)</p>",
+            "<h1>I actively seek to stay updated on new and emerging technologies today and tomorrow.</h1><p>(Nananatili akong updated sa mga bago, umuusbong na teknolohiya ngayon at magpakailanman.)</p>",
             "<h1>I am proficient in using the latest technologies.</h1><p>(Kaya kong gumamit ng mga pinakabagong teknolohiya.)</p>",
             "<h1>I am patient and detail-oriented when it comes to my tasks or projects.</h1><p>(Matiyaga ako at detalyado pagdating sa aking mga gawain o proyekto.)</p>",
             "<h1>I am proficient in identifying and addressing quality issues in my tasks.</h1><p>(Ako ay bihasa sa pagtukoy at pagtugon sa mga isyu sa kalidad sa aking mga gawain.)</p>",
@@ -25,7 +25,7 @@ let questions =  {
 
     "tourism" :
         [
-            "<h1>I am comfortable operating a computer that handles and manages data.</h1><p>(Komportable ako sa paggamit ng isang computer na humahawak at namamahala ng data.)</p>",
+            "<h1>I am comfortable operating and handling computer data.</h1><p>(Komportable ako sa paggamit at sa paghawak ng computer data.)</p>",
             "<h1>I can easily find and share information about different places.</h1><p>(Madali akong makahanap at makapagbahagi ng impormasyon tungkol sa iba't ibang lugar.)</p>",
             "<h1>I am capable of understanding and interpreting information about various topics.</h1><p>(May kakayahan akong umunawa at magpakahulugan ng impormasyon tungkol sa iba't ibang paksa.)</p>",
             "<h1>I am able to effectively communicate either through written or through verbal.</h1><p>(Kaya kong makipag-usap o makipag-halubilo sa pamamagitan ng pasulat o sa pamamagitan ng pagsasalita.)</p>",
@@ -33,10 +33,10 @@ let questions =  {
             "<h1>I have a basic understanding of mathematical processes such as addition, subtraction, multiplication, and division.</h1><p>(Mayroon akong pangunahing pag-unawa sa mga prosesong matematika tulad ng pagdaragdag, pagbabawas, pagpaparami, at paghahati.)</p>",
             "<h1>I am able to relate to a diverse group of people in school.</h1><p>(Nagagawa kong makipag-ugnayan sa mga iba't ibang grupo ng tao sa eskwelahan.)</p>",
             "<h1>I am good when it comes to persuading people on different topics.</h1><p>(Magaling ako pagdating sa paghihikayat sa mga tao tungkol sa iba't ibang paksa.)</p>",
-            "<h1>I can create a sense of trust when conversing with other people.</h1><p>(Kaya kong makapagunlad ng tiwala sa aking pakikipag-ugnayan sa iba.)</p>",
+            "<h1>I can create a sense of trust when conversing with other people.</h1><p>(Kayang kong lumikha ng damdamin ng tiwala kapag nakikipag-usap sa ibang tao.)</p>",
             "<h1>I respect and acknowledge the cultural differences and beliefs of others.</h1><p>(Iginagalang at kinikilala ko ang mga pagkakaiba sa kultura at paniniwala ng iba.)</p>",
-            "<h1>I find it easy to connect to other people on a personal level.</h1><p>(Madali akong kumonekta sa ibang tao sa isang personal na antas.)</p>",
-            "<h1>I understand what other people want other than my own.</h1><p>(Naiintindihan ko kung anong gusto ng ibang tao maliban lang sa sarili ko.)</p>",
+            "<h1>I find it easy to connect to other people on a personal level.</h1><p>(Madali akong kumonekta sa ibang tao sa personal na antas.)</p>",
+            "<h1>I am able to understand what other people want.</h1><p>(Naiintindihan ko kung ano and gusto ng ibang tao.)</p>",
             "<h1>I can complete school-related documents or assignments on time or before the deadline.</h1><p>(Makukumpleto ko ang mga gawaing pang-eskwelahan sa itinakdang oras o bago pa doon.)</p>",
             "<h1>I have dreams about going to different places or different countries.</h1><p>(May mga pangarap akong pakapunta sa iba't ibang lugar o sa iba't ibang bansa.)</p>",
             "<h1>I have a basic knowledge on how to use smartphones, computers, and such.</h1><p>(Mayroon akong pangunahing kaalaman sa paggamit ng mga smartphone, computer, at iba pa.)</p>"
@@ -44,15 +44,15 @@ let questions =  {
 
     "animation" :
         [
-            "<h1>I can perform basic calculations and basic measuring.</h1><p>(Kaya kong magsagawa ng mga pangunahing kalkukasyon at pagsukat.)</p>",
-            "<h1>I can implement my ideas and imagination on paper.</h1><p>(Kaya kong ilipat yung mga ideya at imahinasyon ko sa papel.)</p>",
-            "<h1>I am comfortable working over time.</h1><p>(Komportable akong gumawa ng mga gawain kahit lipas oras na.)</p>",
+            "<h1>I can perform basic calculations and basic measuring.</h1><p>(Kaya kong magsagawa ng mga pangunahing kalkulasyon at pagsukat.)</p>",
+            "<h1>I can implement my ideas and imagination on paper.</h1><p>(Kaya kong ilarawan and mga ideya at imahinasyon ko sa papel.)</p>",
+            "<h1>I am comfortable working over time.</h1><p>(Komportable akong gumawa ng mga gawain kahit lagpas na sa oras ng trabaho.)</p>",
             "<h1>I have a good sense of timing and spacing.</h1><p>(Mayroon akong ideya patungkol sa timing at distansiya.)</p>",
-            "<h1>I am good at expressing when it comes to illustration or drawing.</h1><p>(Magaling akong mag-pahayag pagdating sa pagguhit.)</p>",
+            "<h1>I am good at expressing when it comes to drawing or illustration.</h1><p>(Magaling akong mag-pahayag pagdating sa pagguhit o sa paggamit ng larawan.)</p>",
             "<h1>I have a good understanding of human and animal movement.</h1><p>(Mayroon akong pang-unawa sa galaw ng mga tao o hayop.)</p>",
             "<h1>I can create visual representations of ideas or concepts.</h1><p>(Kaya kong lumikha ng mga visual na representasyon mg mga ideya o konsepto.)</p>",
             "<h1>I have a keen eye for detail and can easily spot inconsistencies.</h1><p>(Matalas ang mata ko pagdating sa mga detalye at madali kong makikita ang mga hindi pagkakapare-pareho.)</p>",
-            "<h1>I can easily visualize movements and transitions in my mind.</h1><p>(Madali kong na-visualize ang mga galaw at transisyon sa aking isipan.)</p>",
+            "<h1>I can easily visualize movements and transitions in my mind.</h1><p>(Madali kong ma-visualize ang mga galaw at transisyon sa aking isipan.)</p>",
             "<h1>I am patient and can spend a lot of time perfecting a piece of work.</h1><p>(Matiyaga ako at naglalaan ako ng maraming oras sa pag-perpekto ng isang piraso.)</p>",
             "<h1>I am able to maintain focus and concentration over long periods of time.</h1><p>(Nagagawa kong mapanatili ang konsentrasyon ko sa mahabang oras.)</p>",
             "<h1>I am comfortable with repetitive tasks and do not easily get bored.</h1><p>(Komportable ako sa mga paulit-ulit na gawain at hindi ako madaling magsawa.)</p>",
@@ -70,11 +70,11 @@ let questions =  {
             "<h1>I am skilled at assembling various components to create a complete product.</h1><p>(Bihasa ako sa pagsasama-sama ng iba't ibang mga bagay-bagay upang lumikha ng isang kumpletong produkto.)</p>",
             "<h1>I am comfortable following precise instructions.</h1><p>(Komportable ako na sumunod sa mga tumpak na tagubilin.)</p>",
             "<h1>I am willing to invest time in practicing and perfecting my skills.</h1><p>(Handa akong maglaan ng oras sa pagsasanay at pagperpekto ng aking mga kasanayan.)</p>",
-            "<h1>I am comfortable working under pressure.</h1><p>(Komportable akong magtrabaho sa mga nakababahalang kondisyon.)</p>",
+            "<h1>I am comfortable working under pressure.</h1><p>(Kumportable ako sa pagtatrabaho sa ilalim ng presyon.)</p>",
             "<h1>I am comfortable working in a team.</h1><p>(Komportable akong magtrabaho sa isang pangkat.)</p>",
-            "<h1>I am comfortable working in a fast-paced environment.</h1><p>(Komportable akong magtrabaho sa isang kapaligiran na mabilisan yung mga gawain.)</p>",
+            "<h1>I am comfortable working in a fast-paced environment.</h1><p>(Komportable akong magtrabaho sa isang kapaligiran na mabilisan ang mga gawain.)</p>",
             "<h1>I am familiar with safety and sanitation techniques.</h1><p>(Pamilyar ako sa mga pamamaraan ng kaligtasan at kalinisan.)</p>",
-            "<h1>I am confident in my ability to adapt instructions based on available resources.</h1><p>(May tiwala ako sa aking kakayahang umangkop ang mga tagubilin batay sa anong mayroon na mga mapagkukunan ang magagamit.)</p>",
+            "<h1>I am confident in my ability to adapt instructions based on available resources.</h1><p>(May tiwala ako sa aking kakayahang umangkop sa mga tagubilin batay sa anong mayroon na mga mapagkukunan ang magagamit.)</p>",
             "<h1>I want to improve my experience in preparing dishes.</h1><p>(Gusto kong pagbutihin ang aking karanasan sa paghahanda ng mga pagkain.)</p>",
             "<h1>I can work in a hot environment with little to no stress.</h1><p>(Kaya kong magtrabaho sa isang mainit na kapaligiran na hindi na-stress ng mabilisan.)</p>",
             "<h1>I am efficient in going back and forth between different tasks.</h1><p>(Mahusay ako pagdating sa multitasking.)</p>"
