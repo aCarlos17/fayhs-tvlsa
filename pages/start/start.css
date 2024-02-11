@@ -9,6 +9,30 @@ body {
     padding: 0;
 }
 
+/* Instructions */
+#instructions {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-color: rgba(0,0,0,0.4); 
+    overflow: scroll;
+}
+
+.instructions-prompt {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+    margin: 3rem auto auto;
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+}
+
+/* The test */
 #content {
     height: 100vh;
     display: flex;
