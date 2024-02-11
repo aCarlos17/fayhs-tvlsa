@@ -199,11 +199,9 @@ function random_pick(questions) {
     // Get an array of the keys in the object
     let strand = Object.keys(questions);
     // Check if the object is empty
-    if (strand.length == 0) {
-      // If so, print a message and return
-      question_event.question_is.innerHTML = '<h1>Click "See Results" to see your recommended strand.</h1>'
-      myvariables.nextbutton.innerHTML = "See Results";
-      return;
+    if (strand.length == 1) {
+        window.location.href = `../result/result.html?prog=${prog}&anim=${anim}&tour=${tour}&cook=${cook}`;
+        return;
     }
     // Otherwise, pick a random key from the array
     let randomKey = Math.floor(Math.random() * strand.length);
@@ -235,29 +233,21 @@ question_event.question_is.innerHTML = logq
 console.log(prog, anim, cook, tour)
 
 myvariables.nextbutton.onclick = function() {
-    if (myvariables.nextbutton.innerHTML == "See Results") {
-        // Redirect with URL parameters
-        window.location.href = `../result/result.html?prog=${prog}&anim=${anim}&tour=${tour}&cook=${cook}`;
+
+    const isAnyChecked = Array.from(myvariables.checkbox).some(checkbox => checkbox.checked);
+
+    if (!isAnyChecked) {
+        alert("Please select an option before proceeding.");
+        return;
     }
 
-    else {
-        const isAnyChecked = Array.from(myvariables.checkbox).some(checkbox => checkbox.checked);
+    eventjanitor.check_select();
+    eventjanitor.clean_select();
 
-        if (!isAnyChecked) {
-            alert("Please select an option before proceeding.");
-            return;
-        }
-
-        eventjanitor.check_select();
-        eventjanitor.clean_select();
-
-        question_dic = random_pick(questions)
-        keyval = question_dic.key
-        logq = question_dic.value
-        
-        question_event.question_is.innerHTML = logq
-        console.log(prog, anim, cook, tour)
-    }
-
+    question_dic = random_pick(questions)
+    keyval = question_dic.key
+    logq = question_dic.value
     
+    question_event.question_is.innerHTML = logq
+    console.log(prog, anim, cook, tour)
 }
