@@ -51,15 +51,14 @@ body {
 
     display: block;
     border-radius: 30px;
+    margin: 0 auto;
 
+    padding: 1.1rem;
+    padding-left: 1.5rem; padding-right: 1.5rem;
     border: none;
     background-color: #1c973e;
 
-    padding: 12px;
-    font-size: 12px;
-    padding-left: 1.5rem; padding-right: 1.5rem;
-    box-shadow: none;
-    margin: 0 auto;
+    font-size: 1rem;
 }
 
 .start-button:hover {
@@ -204,5 +203,18 @@ form {
         margin-left: 1.65rem;
     }
 
+    .start-button {
+        padding: 1.1rem 1.5rem;
+    }
+    
+    .instructions-prompt {
+        width: 80%;
+    }
+}
 
+@media only screen and (min-width: 1000px) {
+
+    .instructions-prompt {
+        width: 50%;
+    }
 }
